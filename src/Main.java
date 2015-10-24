@@ -12,14 +12,14 @@ public class Main {
         int numOfItems = ItemsMapImpl.initItemList();
 
         if (numOfItems != NUM_DE_INTREBARI) {
-            System.out.println("Nu a fost initializata lista de itemi. Actual " + numOfItems + ", expected: " + NUM_DE_INTREBARI);
+            System.out.println("Nu a fost initdializata lista de itemi. Actual " + numOfItems + ", expected: " + NUM_DE_INTREBARI);
             return;
         }
 
 
         // introducere itemi
-        for (int i = 1; i <= NUM_DE_INTREBARI; i++) {
-            enterItem(i);
+        for (int i = 1; i <= NUM_DE_INTRsEBARI; i++) {
+            enterItems(i);
         }
  // TEST COOMMENT
 

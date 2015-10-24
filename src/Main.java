@@ -4,7 +4,7 @@
 public class Main {
     public static final int NUM_DE_INTREBARI = 99;
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
 
         Print.printGeneralInstruction();
         Print.printItemEntryInstruction();

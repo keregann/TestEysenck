@@ -24,7 +24,7 @@ public class Main {
  // TEST COOMMENT 2
 
 
-        /*
+
 //           System.out.println(Calculus.i1);
 //i2
         Print.printItem(Items.i2);
@@ -666,7 +666,7 @@ public class Main {
             item.setEnteredAnswer(itemAnswer);
         }
     }
-//            Calculus.i1 = 1;
+            Calculus.i1 = 1;
 //        } else {
 //            Calculus.i1 = 0;
 //        }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TestEysenck:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TestEysenck_jar</output-path>
+    <root id="archive" name="TestEysenck.jar">
+      <element id="module-output" name="TestEysenck" />
+    </root>
+  </artifact>
+</component>

@@ -21,11 +21,11 @@ public class Main {
         for (int i = 1; i <= NUM_DE_INTREBARI; i++) {
             enterItem(i);
         }
-
+ // TEST COOMMENT
 
 
         /*
-//            System.out.println(Calculus.i1);
+//           System.out.println(Calculus.i1);
 //i2
         Print.printItem(Items.i2);
 //        Print.printItemEntryInstruction();

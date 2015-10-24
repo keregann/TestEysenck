@@ -23,7 +23,7 @@ public class Calculus {
     public static int i19;
     public static int i20;
     public static int i21;
-    public static int i22;
+    //Sters i22
     public static int i23;
     public static int i24;
     public static int i25;

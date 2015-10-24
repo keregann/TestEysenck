@@ -2,7 +2,7 @@
  * Created by keregann on 8/8/15.
  */
 public class Main {
-    public static final int NUM_DE_INTREBARI = 57;
+    public static final int NUM_DE_INTREBARI = 99;
 
     public static void main(String[] args) {
 
@@ -15,6 +15,7 @@ public class Main {
             System.out.println("Nu a fost initializata lista de itemi. Actual " + numOfItems + ", expected: " + NUM_DE_INTREBARI);
             return;
         }
+
 
         // introducere itemi
         for (int i = 1; i <= NUM_DE_INTREBARI; i++) {

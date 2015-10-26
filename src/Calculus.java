@@ -2,7 +2,7 @@
  * Created by keregann on 8/28/15.
  */
 public class Calculus {
-    public static int i1; // De nimicit durdomu ista
+    public static int i1; // TODO: De nimicit durdomu ista
     public static int i2;
     public static int i3;
     public static int i4;

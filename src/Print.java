@@ -1,3 +1,5 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -24,6 +26,11 @@ public class Print {
         System.out.println(ItemsMapImpl.itemList.get(itemNumber).getQuestion());
     }
 
+    public static void printItemWithAnswer(int itemNumber){
+        // TODO: de implementat
+
+        throw new NotImplementedException();
+    }
 
 
 }

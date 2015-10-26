@@ -12,6 +12,12 @@ public class Main {
         init();
         mainMenu();     // se va ocupa de bussines logica aplicatiei
 
+        // TODO: De modificat aplicatia dupa modeleul Model-View-Controller, fiecare clasa si metoda de organizat dupa patern
+        // http://stackoverflow.com/questions/2626803/mvc-model-view-controller-can-it-be-explained-in-simple-terms
+        // http://www.oracle.com/technetwork/articles/javase/index-142890.html
+        // http://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488
+
+
     }
 
     private static void init() {
@@ -49,9 +55,11 @@ public class Main {
 
     private static void showAllAnswers() {
 
-        throw new NotImplementedException();
 
         // TODO: citeste toate itemele din lista si afiseaza impreuna cu raspunsurile introduse
+        // fa un loop si cheama functia printItemWithAnswer()
+
+        throw new NotImplementedException();
     }
 
     private static void modifyAnswer() {

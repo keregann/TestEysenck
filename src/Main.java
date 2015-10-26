@@ -1,14 +1,20 @@
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
 /**
  * Created by keregann on 8/8/15.
  */
 public class Main {
     public static final int NUM_DE_INTREBARI = 99;
 
-    public static void main(Strings[] args) {
+    public static void main(String[] args) {
 
-        Print.printGeneralInstruction();
-        Print.printItemEntryInstruction();
+        // functia main se ocupa de initializarea si flow programului, nu contine bussiness logica
+        init();
+        mainMenu();     // se va ocupa de bussines logica aplicatiei
 
+    }
+
+    private static void init() {
         int numOfItems = ItemsMapImpl.initItemList();
 
         if (numOfItems != NUM_DE_INTREBARI) {
@@ -16,15 +22,84 @@ public class Main {
             return;
         }
 
-
         // introducere itemi
-        for (int i = 1; i <= NUM_DE_INTRsEBARI; i++) {
-            enterItems(i);
+        for (int i = 1; i <= NUM_DE_INTREBARI; i++) {
+            enterItem(i);
         }
- // TEST COOMMENT 2
+    }
+
+    private static void mainMenu() {
+
+        Print.printGeneralInstruction();
+        Print.printItemEntryInstruction();  // asta daca vrei puneo in functia de enterItem() sa fie la fiecare
+
+        while (true) {
+
+            int choice = 1;
+            // TODO: read choice from keyboard
+            switch (choice) {
+                case 1 : readAllAnswers(); break;
+                case 2 : modifyAnswer(); break;
+                case 3 : showAllAnswers(); break;
+                default: break;
+            }
+        }
+
+    }
+
+    private static void showAllAnswers() {
+
+        throw new NotImplementedException();
+
+        // TODO: citeste toate itemele din lista si afiseaza impreuna cu raspunsurile introduse
+    }
+
+    private static void modifyAnswer() {
+
+
+        int itemNumber = 1;
+        char answer = 'Y';
+        // TODO: read intem number and answer from keyboard
+
+        enterItem(itemNumber);
+    }
+
+    private static void readAllAnswers() {
+
+        int itemNumber = 1;
+        char answer = 'Y';
+        // TODO: make a loop and eneter all items numbers and answers from keyboard
+        // TODO loop -> enterItem(itemNumber);
+
+    }
+
+    public static void enterItem(int itemNumber) {
+
+        if (!ItemsMapImpl.itemList.contains(itemNumber)) {
+            System.err.println("Nu exista item " + itemNumber);
+            System.exit(1);
+        }
+
+        Print.printItemQuestion(itemNumber);
+
+        Character itemAnswer = InputAnswer.inputAnswer();
+        itemAnswer = Character.toLowerCase(itemAnswer);
+
+        if (itemAnswer.equals('y') || itemAnswer.equals('n')) {
+            Item item = ItemsMapImpl.itemList.get(itemNumber);
+            item.setEnteredAnswer(itemAnswer);
+        }
+    }
 
 
 
+
+
+}
+
+
+
+/*
 //           System.out.println(Calculus.i1);
 //i2
         Print.printItem(Items.i2);
@@ -646,31 +721,3 @@ public class Main {
 
         Calculus.simcerityResult();
  */
-    }
-
-
-    public static void enterItem(int itemNumber) {
-
-        if (!ItemsMapImpl.itemList.contains(itemNumber)) {
-            System.err.println("Nu exista item " + itemNumber);
-            System.exit(1);
-        }
-
-        Print.printItemQuestion(itemNumber);
-
-        Character itemAnswer = InputAnswer.inputAnswer();
-        itemAnswer = Character.toLowerCase(itemAnswer);
-
-        if (itemAnswer.equals('y') || itemAnswer.equals('n')) {
-            Item item = ItemsMapImpl.itemList.get(itemNumber);
-            item.setEnteredAnswer(itemAnswer);
-        }
-    }
-            Calculus.i1 = 1;
-//        } else {
-//            Calculus.i1 = 0;
-//        }
-
-
-
-}

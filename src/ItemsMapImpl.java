@@ -68,11 +68,65 @@ public class ItemsMapImpl {
     public static List<Item> itemList;
 
     public static int initItemList() {
-        itemList = new ArrayList<>();
+        itemList = new ArrayList<>();  // TODO: de introdus toti itemii (is done!!!)
 
         itemList.add(1, new Item(1, i1, 'y'));
-
-        // TODO: de introdus toti itemii
+        itemList.add(2, new Item(2, i2, 'y'));
+        itemList.add(3, new Item(3, i3, 'y'));
+        itemList.add(4, new Item(4, i4, 'y'));
+        itemList.add(5, new Item(5, i5, 'n'));
+        itemList.add(6, new Item(6, i6, 'y'));
+        itemList.add(7, new Item(7, i7, 'y'));
+        itemList.add(8, new Item(8, i8, 'y'));
+        itemList.add(9, new Item(9, i9, 'y'));
+        itemList.add(10, new Item(10, i10, 'y'));
+        itemList.add(11, new Item(11, i11, 'y'));
+        itemList.add(12, new Item(12, i12, 'n'));
+        itemList.add(13, new Item(13, i13, 'y'));
+        itemList.add(14, new Item(14, i14, 'y'));
+        itemList.add(15, new Item(15, i15, 'n'));
+        itemList.add(16, new Item(16, i16, 'y'));
+        itemList.add(17, new Item(17, i17, 'y'));
+        itemList.add(20, new Item(18, i18, 'n'));
+        itemList.add(21, new Item(19, i19, 'y'));
+        itemList.add(22, new Item(20, i20, 'n'));
+        itemList.add(21, new Item(21, i21, 'y'));
+        itemList.add(22, new Item(22, i22, 'y'));
+        itemList.add(23, new Item(23, i23, 'y'));
+        itemList.add(24, new Item(24, i24, 'y'));
+        itemList.add(25, new Item(25, i25, 'y'));
+        itemList.add(26, new Item(26, i26, 'y'));
+        itemList.add(27, new Item(27, i27, 'y'));
+        itemList.add(28, new Item(28, i28, 'y'));
+        itemList.add(29, new Item(29, i29, 'n'));
+        itemList.add(30, new Item(30, i30, 'n'));
+        itemList.add(31, new Item(31, i31, 'y'));
+        itemList.add(32, new Item(32, i32, 'n'));
+        itemList.add(33, new Item(33, i33, 'y'));
+        itemList.add(34, new Item(34, i34, 'n'));
+        itemList.add(35, new Item(35, i35, 'y'));
+        itemList.add(36, new Item(36, i36, 'y'));
+        itemList.add(37, new Item(37, i37, 'n'));
+        itemList.add(38, new Item(38, i38, 'y'));
+        itemList.add(39, new Item(39, i39, 'y'));
+        itemList.add(40, new Item(40, i40, 'y'));
+        itemList.add(41, new Item(41, i41, 'n'));
+        itemList.add(42, new Item(42, i42, 'n'));
+        itemList.add(43, new Item(43, i43, 'y'));
+        itemList.add(44, new Item(44, i44, 'y'));
+        itemList.add(45, new Item(45, i45, 'y'));
+        itemList.add(46, new Item(46, i46, 'y'));
+        itemList.add(47, new Item(47, i47, 'y'));
+        itemList.add(48, new Item(48, i48, 'n'));
+        itemList.add(49, new Item(49, i49, 'y'));
+        itemList.add(50, new Item(50, i50, 'y'));
+        itemList.add(51, new Item(51, i51, 'n'));
+        itemList.add(52, new Item(52, i52, 'y'));
+        itemList.add(53, new Item(53, i53, 'y'));
+        itemList.add(54, new Item(54, i54, 'n'));
+        itemList.add(55, new Item(55, i55, 'y'));
+        itemList.add(56, new Item(56, i56, 'y'));
+        itemList.add(57, new Item(57, i57, 'y'));
 
         return itemList.size();
 

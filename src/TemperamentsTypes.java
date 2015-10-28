@@ -1,11 +1,13 @@
 /**
  * Created by keregann on 8/28/15.
  */
-public class TemperamentsTypes {  // TODO: de transformat in ENUM
-    public static String fullFlegmatic =  "Full Flegmatic";
-    public static String flegmatoMelancolic = "Flegmato - Melancolic";
-    public static String melancolicoFlegmatic = "Melancolico - Flegmatic";
-    public static String fullMelancolic = "Full Melancolic";
-    public static String flegmatoSanguinic = "Flegmato ";
+public class TemperamentsTypes {  // TODO: de transformat in ENUM (poate de lasat stringuri?)
+                                  // TODO: create all temperamentals interpretation
+    public static String fullFlegmatic =  "De scris interpretarea";
+    public static String flegmatoMelancolic = "De scris interpretarea";
+    public static String melancolicoFlegmatic = "De scris interpretarea";
+    public static String fullMelancolic = "De scris interpretarea";
+    public static String flegmatoSanguinic = "De scris interpretarea";
+
 
 }
